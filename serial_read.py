@@ -36,7 +36,7 @@ def read_serial(root):
                     "Temp": (float, "current_temp", temp_data),
                     "Hum": (float, "current_humidity", hum_data),
                     "PR": (int, "current_pr", pr_data),
-                    "dB": (int, "current_db", db_data),
+                    "dB": (float, "current_db", db_data),
                     "Motion": (lambda x: x.lower() == "true", "current_motion", motion_data)
                 }
                 
